@@ -6,11 +6,6 @@
 
 我是一个人
 
-## 🧰 我能干什么
-
--编程`[Python/Java/HTML/CSS/JavaScript]`
--使用AI`[Deepseek/ChatGPT]`
-
 ## 🔥 关于爱好
 
 喜欢**旅游**、**火车**、**Minecraft**、**地平线4**
