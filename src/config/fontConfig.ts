@@ -79,6 +79,14 @@ export const fontConfig: FontConfig = {
 			weight: 500,
 			display: "swap" as const,
 		},
+		"blueaka": {
+			id: "blueaka",
+			name: "blueaka",
+			src: "https://font.kivo.wiki/Blueaka_Bold/Blueaka_Bold.css",
+			family: "blueaka",
+			weight: 500,
+			display: "swap" as const,
+		},
 	},
 
 	// 全局字体回退
