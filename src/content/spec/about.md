@@ -1,6 +1,6 @@
 # 关于我 / About Me
 
-你好！我是 **夏叶** ，一个在数字世界中默默无闻的一片叶子。
+你好！我是 **LJXH** 。
 
 ## 🛠️ 关于本站
 
@@ -11,13 +11,18 @@
 
 **🖥️在线预览： [Firefly - Demo site](https://firefly.cuteleaf.cn/)**
 
-**🏠我的博客： [https://blog.cuteleaf.cn](https://blog.cuteleaf.cn/)**
+**🏠我的博客： [https://www.ljxh-h.cc.cd/](https://www.ljxh-h.cc.cd/)**
 
 **📝Firefly使用文档： [https://docs-firefly.cuteleaf.cn](https://docs-firefly.cuteleaf.cn/)**
+
+**❄️LJXH-BLOG开源地址：
+[https://github.com/MSQY-H/ljxh-blog-astro-firefly/](https://github.com/MSQY-H/ljxh-blog-astro-firefly/)**
 
 **⭐Firefly开源地址：[https://github.com/CuteLeaf/Firefly](https://github.com/CuteLeaf/Firefly)** 
 
 **⭐Fuwari开源地址：[https://github.com/saicaca/fuwari](https://github.com/saicaca/fuwari)**
+
+::github{repo="MSQY-H/ljxh-blog-astro-firefly"}
 
 ::github{repo="CuteLeaf/Firefly"}
 
