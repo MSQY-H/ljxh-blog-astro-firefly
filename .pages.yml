@@ -80,7 +80,7 @@ actions:
   - name: merge-dev-master
     label: 合并 dev 到 master
     workflow: merge-dev.yml
-    ref: main          # 或 'current' 使用 CMS 当前分支
+    ref: dev          # 或 'current' 使用 CMS 当前分支
     confirm:
       title: 确认合并
       message: 将 dev 分支合并到 master，请确保没有冲突。
