@@ -35,7 +35,8 @@
 #navbar>div {
     background-color: var(--card-bg);
     border: 1px solid transparent;
-    border-radius: 0 0 0.75rem 0.75rem;
+    /*border-radius: 0 0 0.75rem 0.75rem;*/
+    border-radius: 0 !important;
     backdrop-filter: blur(0);
     @apply navbar-surface-transition;
 }
@@ -67,7 +68,8 @@ body:has(#wallpaper-wrapper) #navbar[data-transparent-mode="semifull"]:not(.scro
     body:has(#wallpaper-wrapper) #navbar[data-transparent-mode="semi"]>div {
         backdrop-filter: blur(var(--navbar-glass-blur, 20px)) !important;
         background: rgba(255, 255, 255, var(--opacity-55)) !important;
-        border-radius: 0 0 0.75rem 0.75rem !important;
+        /*border-radius: 0 0 0.75rem 0.75rem !important;*/
+        border-radius: 0 !important;
         box-shadow: var(--shadow-navbar) !important;
     }
 
@@ -87,7 +89,8 @@ body:has(#wallpaper-wrapper) #navbar[data-transparent-mode="semifull"]:not(.scro
         backdrop-filter: blur(0) !important;
         background: transparent !important;
         border: none !important;
-        border-radius: 0 0 0.75rem 0.75rem !important;
+        /*border-radius: 0 0 0.75rem 0.75rem !important;*/
+        border-radius: 0 !important;
         box-shadow: none !important;
     }
 
@@ -96,7 +99,8 @@ body:has(#wallpaper-wrapper) #navbar[data-transparent-mode="semifull"]:not(.scro
     body:has(#wallpaper-wrapper) #navbar[data-transparent-mode="semifull"].scrolled>div {
         backdrop-filter: blur(var(--navbar-glass-blur, 20px)) !important;
         background: rgba(255, 255, 255, var(--opacity-55)) !important;
-        border-radius: 0 0 0.75rem 0.75rem !important;
+        /*border-radius: 0 0 0.75rem 0.75rem !important;*/
+        border-radius: 0 !important;
         box-shadow: var(--shadow-navbar) !important;
     }
 }
@@ -112,7 +116,8 @@ body:has(#wallpaper-wrapper) #navbar[data-transparent-mode="semifull"]:not(.scro
     body:has(#wallpaper-wrapper) #navbar[data-transparent-mode="semi"][data-is-home="true"]>div {
         backdrop-filter: blur(var(--navbar-glass-blur, 20px)) !important;
         background: rgba(255, 255, 255, var(--opacity-55)) !important;
-        border-radius: 0 0 0.75rem 0.75rem !important;
+        /*border-radius: 0 0 0.75rem 0.75rem !important;*/
+        border-radius: 0 !important;
         box-shadow: var(--shadow-navbar) !important;
     }
 
@@ -132,7 +137,8 @@ body:has(#wallpaper-wrapper) #navbar[data-transparent-mode="semifull"]:not(.scro
         backdrop-filter: blur(0) !important;
         background: transparent !important;
         border: none !important;
-        border-radius: 0 0 0.75rem 0.75rem !important;
+        /*border-radius: 0 0 0.75rem 0.75rem !important;*/
+        border-radius: 0 !important;
         box-shadow: none !important;
     }
 
@@ -141,7 +147,8 @@ body:has(#wallpaper-wrapper) #navbar[data-transparent-mode="semifull"]:not(.scro
     body:has(#wallpaper-wrapper) #navbar[data-transparent-mode="semifull"][data-is-home="true"].scrolled>div {
         backdrop-filter: blur(var(--navbar-glass-blur, 20px)) !important;
         background: rgba(255, 255, 255, var(--opacity-55)) !important;
-        border-radius: 0 0 0.75rem 0.75rem !important;
+        /*border-radius: 0 0 0.75rem 0.75rem !important;*/
+        border-radius: 0 !important;
         box-shadow: var(--shadow-navbar) !important;
     }
 }
