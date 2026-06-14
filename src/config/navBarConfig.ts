@@ -56,9 +56,15 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		children: [
 			{
 				name: "GitHub",
-				url: "https://github.com/IOCHI-HXJLA",
+				url: "https://github.com/HXJLA",
 				external: true,
 				icon: "fa7-brands:github",
+			},
+			{
+				name: "Bilibili",
+				url: "https://bilibili.com/",
+				external: true,
+				icon: "fa7-brands:bilibili",
 			},
 		],
 	});
