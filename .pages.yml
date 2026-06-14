@@ -5,6 +5,11 @@ media:
     input: public/assets/images
     output: /assets/images
     categories: [image]
+  - name: gallery
+    label: Gallery Images
+    input: public/gallery
+    output: public/gallery
+    categories: [image]
   - name: posts
     label: Posts Images
     input: src/content/posts
