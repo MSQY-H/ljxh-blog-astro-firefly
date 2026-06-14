@@ -76,7 +76,7 @@ export const fontConfig: FontConfig = {
 			name: "blueaka",
 			src: "https://font.kivo.wiki/Blueaka/Blueaka.css",
 			family: "blueaka",
-			weight: 500,
+			weight: 400,
 			display: "swap" as const,
 		},
 		"blueaka": {
@@ -84,7 +84,7 @@ export const fontConfig: FontConfig = {
 			name: "blueaka",
 			src: "https://font.kivo.wiki/Blueaka_Bold/Blueaka_Bold.css",
 			family: "blueaka",
-			weight: 500,
+			weight: 700,
 			display: "swap" as const,
 		},
 	},
