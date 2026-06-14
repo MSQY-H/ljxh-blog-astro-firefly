@@ -77,11 +77,11 @@ content:
     subfolders: true
 
 actions:
-  - name: merge-dev-master
-    label: 合并 dev 到 master
+  - name: merge-dev-to-master
+    label: 合并 dev → master
     workflow: merge-dev.yml
-    ref: dev          # 或 'current' 使用 CMS 当前分支
+    ref: dev   # 或 'current'
     confirm:
-      title: 确认合并
-      message: 将 dev 分支合并到 master，请确保没有冲突。
+      title: 确认合并？
+      message: 这会将 dev 分支合并到 master，请确保没有冲突。
       button: 开始合并
