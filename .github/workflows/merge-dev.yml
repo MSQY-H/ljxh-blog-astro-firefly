@@ -1,36 +1,67 @@
-name: Manual Merge dev → master
+name: Manual Merge dev → master (with Pages CMS payload)
 
 on:
-  workflow_dispatch:          # 手动触发，不需要任何输入
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: 'Pages CMS 发送的 JSON 负载'
+        required: true
+        type: string
 
+# 消除 Node.js 20 的警告（可选）
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # 消除 Node 20 警告（可选）
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   merge:
     runs-on: ubuntu-latest
-    # 可选：只允许你自己运行（替换成你的 GitHub 用户名）
-    # if: github.actor == '你的用户名'
+    # 可选：只允许你自己触发（替换为你的 GitHub 用户名）
+    if: github.actor == 'MSQY-H'
     permissions:
-      contents: write          # 明确授予写权限
-
+      contents: write
     steps:
-      - name: Checkout repository
+      - name: 安全解析 Pages CMS payload
+        id: parse
+        env:
+          PAYLOAD_RAW: ${{ github.event.inputs.payload }}
+        run: |
+          # 将 payload 写入文件，避免 shell 解释特殊字符
+          echo "$PAYLOAD_RAW" > payload_raw.json
+          
+          # 校验是否为有效 JSON
+          if ! jq empty payload_raw.json 2>/dev/null; then
+            echo "❌ 错误：payload 不是有效的 JSON"
+            echo "原始内容："
+            cat payload_raw.json
+            exit 1
+          fi
+          
+          # 提取触发者 GitHub 用户名（如果不存在则设为 'unknown'）
+          TRIGGERED_BY=$(jq -r '.triggeredBy.githubUsername // "unknown"' payload_raw.json)
+          echo "triggered_by=$TRIGGERED_BY" >> $GITHUB_ENV
+          
+          # 可选：也可以提取其他信息，比如操作的文件路径等
+          # CONTEXT_TYPE=$(jq -r '.context.type // ""' payload_raw.json)
+          # echo "context_type=$CONTEXT_TYPE" >> $GITHUB_ENV
+          
+          echo "✅ payload 解析成功，触发者：$TRIGGERED_BY"
+
+      - name: Checkout 代码
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0        # 获取完整历史，以便合并
+          fetch-depth: 0          # 获取完整历史以便合并
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Configure Git user
+      - name: 配置 Git 用户
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Merge dev into master
+      - name: 合并 dev 到 master
         run: |
           git fetch origin master
           git checkout master
-          git merge origin/dev --no-ff -m "Manual merge dev → master (triggered via Pages CMS)"
+          git merge origin/dev --no-ff -m "Manual merge via Pages CMS (triggered by ${{ env.triggered_by }})"
 
-      - name: Push changes
+      - name: 推送合并结果
         run: git push origin master
