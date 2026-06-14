@@ -1,0 +1,72 @@
+# 媒体目录配置
+media: 
+  - name: public
+    label: Public Images
+    input: public/assets/images
+    output: /assets/images
+    categories: [image]
+  - name: posts
+    label: Posts Images
+    input: src/content/posts
+    output: /src/content/posts
+    categories: [image]
+  - name: assets
+    label: Assets Images
+    input: src/assets/images
+    output: src/assets/images
+    categories: [image]
+  - name: musics
+    label: Musics
+    input: public/assets/music
+    output: public/assets/music
+    categories: [image,audio]
+  - name: config
+    label: Config Files
+    input: src/config
+    output: src/config
+    categories: [code]
+# 内容管理配置
+content:
+  # 文章
+  - name: posts
+    type: collection
+    # 后台显示标签
+    label: Posts
+    # 内容存储目录
+    path: src/content/posts
+    # 是否支持子文件夹
+    subfolders: true
+    # 文件命名规则
+    filename:
+      template: "{primary}.md"
+      field: create
+    # 字段列表
+    fields:
+      - { name: title, label: Title 标题, type: string }
+      - { name: published, label: Published Date 发布日期, type: date }
+      - { name: updated, label: Updated Date 更新日期, type: date, required: false }
+      - { name: description, label: Description 文章描述, type: string, required: false }
+      - { name: image, label: Cover 封面, type: string, required: false }
+      - { name: cover, label: Upload File 仅用于上传文件，无实际用途, type: image, options: {media: posts},required: false }
+      - { name: category, label: Category 分类, type: string, required: false }
+      - { name: tags, label: Tags 标签, type: string, list: true, required: false }
+      - { name: draft, label: Draft 草稿, type: boolean, required: false }
+      - { name: body, label: Body 主体, type: rich-text, required: true } 
+      - { name: pinned, label: Pinned 置顶, type: boolean, required: false }
+      - { name: slug, label: Slug 自定义url, type: string, required: false }
+      - { name: author, label: Author 编写者, type: string, required: false }
+      - { name: comment, label: Comment 评论, type: boolean, required: false, default: true }
+      - { name: licenseName, label: LicenseName 协议名, type: string, required: false }
+      - { name: licenseUrl, label: LicenseUrl 协议url, type: string, required: false }
+      - { name: sourceLink, label: SourceLink 原链接, type: string, required: false }
+      - { name: password, label: Password 加密密码, type: string, required: false }
+      - { name: passwordHint, label: PasswordHint 密码提示, type: string, required: false }
+  #特殊
+  - name: spec
+    type: collection
+    # 后台显示标签
+    label: Spec
+    # 内容存储目录
+    path: src/content/spec
+    # 是否支持子文件夹
+    subfolders: true
