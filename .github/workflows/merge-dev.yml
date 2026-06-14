@@ -1,28 +1,43 @@
+# .github/workflows/manual-merge.yml
 name: Manual Merge dev → master
 
 on:
-  workflow_dispatch:          # 手动触发
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: 'Pages CMS 发送的 JSON 负载'
+        required: true
+        type: string
 
 jobs:
   merge:
     runs-on: ubuntu-latest
+    if: github.actor == 'MSQY-H'   # 可选：限制只有你能触发
     steps:
-      - name: Checkout code
+      - name: 解析 payload
+        id: parse
+        run: |
+          echo "${{ github.event.inputs.payload }}" | jq '.' > payload.json
+          # 提取触发用户（可选用于日志）
+          TRIGGERED_BY=$(jq -r '.triggeredBy.githubUsername' payload.json)
+          echo "triggered_by=$TRIGGERED_BY" >> $GITHUB_ENV
+
+      - name: Checkout 代码
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0          # 获取完整历史以便合并
+          fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Configure Git user
+      - name: 配置 Git 用户
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Merge dev into master
+      - name: 合并 dev 到 master
         run: |
           git fetch origin master
           git checkout master
-          git merge origin/dev --no-ff -m "Manual merge dev branch to master"
+          git merge origin/dev --no-ff -m "通过 Pages CMS 手动合并（触发者：${{ env.triggered_by }}）"
 
-      - name: Push merged changes
+      - name: 推送合并结果
         run: git push origin master
