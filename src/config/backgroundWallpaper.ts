@@ -41,22 +41,22 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 桌面背景图片（支持单张或多张随机）
 		// desktop: "assets/images/DesktopWallpaper/d1.avif",
 		desktop: [
-			"assets/images/DesktopWallpaper/d1.avif",
-			"assets/images/DesktopWallpaper/d2.avif",
-			"assets/images/DesktopWallpaper/d3.avif",
-			"assets/images/DesktopWallpaper/d4.avif",
-			"assets/images/DesktopWallpaper/d5.avif",
-			"assets/images/DesktopWallpaper/d6.avif",
+			"assets/images/DesktopWallpaper/d1.webp",
+			"assets/images/DesktopWallpaper/d2.webp",
+			"assets/images/DesktopWallpaper/d3.webp",
+			"assets/images/DesktopWallpaper/d4.webp",
+			"assets/images/DesktopWallpaper/d5.webp",
+			"assets/images/DesktopWallpaper/d6.webp",
 		],
 		// 移动背景图片（支持单张或多张随机）
 		// mobile: "assets/images/MobileWallpaper/m1.avif",
 		mobile: [
-			"assets/images/MobileWallpaper/m1.avif",
-			"assets/images/MobileWallpaper/m2.avif",
-			"assets/images/MobileWallpaper/m3.avif",
-			"assets/images/MobileWallpaper/m4.avif",
-			"assets/images/MobileWallpaper/m5.avif",
-			"assets/images/MobileWallpaper/m6.avif",
+			"assets/images/MobileWallpaper/m1.webp",
+			"assets/images/MobileWallpaper/m2.webp",
+			"assets/images/MobileWallpaper/m3.webp",
+			"assets/images/MobileWallpaper/m4.webp",
+			"assets/images/MobileWallpaper/m5.webp",
+			"assets/images/MobileWallpaper/m6.webp",
 		],
 	},
 	// 横幅壁纸和全屏壁纸共享配置
@@ -70,17 +70,17 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 是否允许用户通过控制面板切换横幅标题显示
 			switchable: true,
 			// 主页横幅主标题
-			title: "Lovely firefly!",
+			title: "LJXH的博客",
 			// 主页横幅主标题字体大小
 			titleSize: "3.8rem",
 			// 主页横幅副标题
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"天青色等烟雨 而我在等你",
+				"窗外的麻雀 在电线杆上多嘴",
+				"迷迷蒙蒙 你给的梦",
+				"海风刮过了 无人的街道",
+				"雨纷纷 旧故里草木深",
+				"缓缓飘落的枫叶像思念 我点燃烛火温暖岁末的秋天",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",
@@ -110,9 +110,9 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		waves: {
 			enable: {
 				// 桌面端是否启用水波纹动画效果
-				desktop: true,
+				desktop: false,
 				// 移动端是否启用水波纹动画效果
-				mobile: true,
+				mobile: false,
 			},
 			// 是否允许用户通过控制面板切换水波纹动画
 			switchable: true,

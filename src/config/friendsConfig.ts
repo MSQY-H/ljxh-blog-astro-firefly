@@ -23,10 +23,20 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
+		title: "HXJL BLOG",
+		imgurl:
+			"https://i.ibb.co/WW9gRnNk/IMG-20251228-111816.jpg",
+		desc: "来自Deepseek的blog",
+		siteurl: "https://ljxh-blog.cc.cd",
+		tags: ["Blog"],
+		weight: 11, // 权重，数字越大排序越靠前
+		enabled: true, // 是否启用
+	},
+	{
 		title: "夏夜流萤",
 		imgurl:
 			"https://weavatar.com/avatar/d252655d40d6874417a720bad0a6c5f77f8f6a1fd2f882f8f338402dc37e4190?s=640",
-		desc: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
+		desc: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。（Firefly主题作者博客）",
 		siteurl: "https://blog.cuteleaf.cn",
 		tags: ["Blog"],
 		weight: 10, // 权重，数字越大排序越靠前

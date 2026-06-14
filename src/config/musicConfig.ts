@@ -11,7 +11,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	showInNavbar: true,
 
 	// 使用方式："meting" 使用 Meting API，"local" 使用本地音乐列表
-	mode: "meting",
+	mode: "local",
 
 	// 默认音量 (0-1)
 	volume: 0.7,
@@ -23,24 +23,24 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	showLyrics: true,
 
 	// Meting API 配置
-	meting: {
+	//meting: {
 		// Meting API 地址
 		// 默认使用官方 API，也可以使用自定义 API
-		api: "https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&r=:r",
+		//api: "https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&r=:r",
 		// 音乐平台：netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
-		server: "netease",
+	//server: "netease",
 		// 类型：song=单曲, playlist=歌单, album=专辑, search=搜索, artist=艺术家
-		type: "playlist",
+		//type: "playlist",
 		// 歌单/专辑/单曲 ID 或搜索关键词
-		id: "10046455237",
+		//id: "10046455237",
 		// 认证 token（可选）
-		auth: "",
+		//auth: "",
 		// 备用 API 配置（当主 API 失败时使用）
-		fallbackApis: [
-			"https://api.injahow.cn/meting/?server=:server&type=:type&id=:id",
-			"https://api.moeyao.cn/meting/?server=:server&type=:type&id=:id",
-		],
-	},
+		//fallbackApis: [
+			//"https://api.injahow.cn/meting/?server=:server&type=:type&id=:id",
+			//"https://api.moeyao.cn/meting/?server=:server&type=:type&id=:id",
+		//],
+	//},
 
 	// 本地音乐配置（当 mode 为 'local' 时使用）
 	// 1. 支持传入歌词文件的路径
@@ -50,11 +50,11 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	local: {
 		playlist: [
 			{
-				name: "使一颗心免于哀伤",
-				artist: "知更鸟 / HOYO-MiX / Chevy",
-				url: "/assets/music/使一颗心免于哀伤-哼唱.mp3",
-				cover: "/assets/music/cover/109951169585655912.webp",
-				lrc: "",
+				name: "夜曲",
+				artist: "周杰伦",
+				url: "/assets/music/周杰伦-夜曲.mp3",
+				cover: "/assets/music/cover/11月的萧邦.webp",
+				lrc: "/assets/music/lrc/周杰伦-夜曲.lrc",
 			},
 		],
 	},
