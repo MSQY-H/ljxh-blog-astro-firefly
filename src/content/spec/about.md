@@ -8,8 +8,9 @@
 
 ## 🧰 我能干什么
 
--编程：`[Python/Java/HTML/CSS/JavaScript]`:spoiler[只是会一点皮毛]
--AI：`[Deepseek/ChatGPT]`
+-编程：`[Python/Java/HTML/CSS/JavaScript]`
+:spoiler[只是会一点皮毛]
+-使用AI：`[Deepseek/ChatGPT]`
 
 ## 🔥 关于爱好
 
