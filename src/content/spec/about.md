@@ -2,6 +2,19 @@
 
 你好！我是 **LJXH** 。
 
+## 🤔 我是谁
+
+我是一个人
+
+## 🧰 我能干什么
+
+-编程：`[Python/Java/HTML/CSS/JavaScript]`:spoiler[只是会一点皮毛]
+-AI：`[Deepseek/ChatGPT]`
+
+## 🔥 关于爱好
+
+喜欢**旅游**、**火车**、**Minecraft**、**地平线4**
+
 ## 🛠️ 关于本站
 
 这个网站使用 **Astro** 框架构建，采用了 [Firefly](https://github.com/CuteLeaf/Firefly) 模板，Firefly 是基于 [Fuwari](https://github.com/saicaca/fuwari) 的二次开发。
@@ -27,6 +40,14 @@
 ::github{repo="CuteLeaf/Firefly"}
 
 ::github{repo="saicaca/fuwari"}
+
+## 📬 联系
+
+如果你有任何问题，或者只是想和我打个招呼，欢迎联系我！
+
+- 🖥️ **Github**：[HXJLA](https://github.com/HXJLA)
+- 🖥️ **Github**：[MSQY-H](https://github.com/MSQY-H)
+- 📩 **Email**：[点击发送](mailto:LJXH-H@outlook.com)
 
 ---
 
