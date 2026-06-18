@@ -7,7 +7,7 @@ export const fontConfig: FontConfig = {
 	// 是否预加载字体文件
 	preload: true,
 	// 当前选择的字体，支持多个字体组合
-	selected: ["blueaka"],
+	selected: ["HarmonyOSHans-Regular"],
 
 	// 字体列表
 	// 推荐使用可靠的 CDN 服务商提供的字体链接，它天然做了按需分片加载，且性能较好
@@ -84,6 +84,22 @@ export const fontConfig: FontConfig = {
 			name: "blueaka",
 			src: "https://font.kivo.wiki/Blueaka_Bold/Blueaka_Bold.css",
 			family: "blueaka",
+			weight: 700,
+			display: "swap" as const,
+		},
+		"HarmonyOSHans-Regular": {
+			id: "HarmonyOSHans-Regular",
+			name: "HarmonyOSHans-Regular",
+			src: "https://developer.huawei.com/config/commonResource/font/font.css?v=20250326",
+			family: "HarmonyOSHans-Regular",
+			weight: 400,
+			display: "swap" as const,
+		},
+		"HarmonyOSHans-Regular": {
+			id: "HarmonyOSHans-Regular",
+			name: "HarmonyOSHans-Regular",
+			src: "https://developer.huawei.com/config/commonResource/font/font.css?v=20250326",
+			family: "HarmonyOSHans-Regular",
 			weight: 700,
 			display: "swap" as const,
 		},
