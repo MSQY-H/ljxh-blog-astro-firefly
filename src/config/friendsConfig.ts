@@ -23,6 +23,16 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
+		title: "LJXH",
+		imgurl:
+			"https://i.ibb.co/6RBCvLHc/avatar.webp",
+		desc: "NVIDIA GeForce RTX 5060 Ti",
+		siteurl: "https://life.ljxh-h.cc.cd",
+		tags: ["Blog"],
+		weight: 12, // 权重，数字越大排序越靠前
+		enabled: true, // 是否启用
+	},
+	{
 		title: "HXJL BLOG",
 		imgurl:
 			"https://i.ibb.co/WW9gRnNk/IMG-20251228-111816.jpg",
