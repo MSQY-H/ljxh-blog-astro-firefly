@@ -1,50 +1,76 @@
-# 关于我 / About Me
+大家好！我是**LJXH**，一个来自中国的学生。
 
-你好！我是 **LJXH** 。
+:spoiler[你竟然能找到这里，那你真是太强了！毕竟也没什么人知道这里]
 
-## 🤔 我是谁
+>NVIDIA GeForce RTX 5060 Ti
+><br><right>——LJXH的个性签名</right>
 
-我是一个人
+## 为什么做这个博客
 
-## 🔥 关于爱好
+在家里无聊，玩Deepseek时突然想到可以搞个博客，便开始做了。这个博客是用手机做的。没错，手机也可以！
 
-喜欢**旅游**、**火车**、**Minecraft**、**地平线4**
+:spoiler［（其实是懒得开电脑了，手机是真麻烦，还不能用git和pnpm~~用termux也不是不行~~）!!]
 
-## 🛠️ 关于本站
+厉不厉害（得意.jpg）
 
-这个网站使用 **Astro** 框架构建，采用了 [Firefly](https://github.com/CuteLeaf/Firefly) 模板，Firefly 是基于 [Fuwari](https://github.com/saicaca/fuwari) 的二次开发。
+## 关于此网站
 
-**Firefly** 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。
+### 技术
 
+此网站是基于**Astro**的**Firefly**主题制作的一个博客。开源链接在下面：
 
-**🖥️在线预览： [Firefly - Demo site](https://firefly.cuteleaf.cn/)**
-
-**🏠我的博客： [https://www.ljxh-h.cc.cd/](https://www.ljxh-h.cc.cd/)**
-
-**📝Firefly使用文档： [https://docs-firefly.cuteleaf.cn](https://docs-firefly.cuteleaf.cn/)**
-
-**❄️LJXH-BLOG开源地址：
-[https://github.com/MSQY-H/ljxh-blog-astro-firefly/](https://github.com/MSQY-H/ljxh-blog-astro-firefly/)**
-
-**⭐Firefly开源地址：[https://github.com/CuteLeaf/Firefly](https://github.com/CuteLeaf/Firefly)** 
-
-**⭐Fuwari开源地址：[https://github.com/saicaca/fuwari](https://github.com/saicaca/fuwari)**
-
-::github{repo="MSQY-H/ljxh-blog-astro-firefly"}
+::github{repo="withastro/astro"}
 
 ::github{repo="CuteLeaf/Firefly"}
 
-::github{repo="saicaca/fuwari"}
+::github{repo="MSQY-H/ljxh-blog-astro-firefly"}
 
-## 📬 联系
+此网站部署于**Cloudflare Pages**，使用**Pages CMS**进行后台管理。
 
-如果你有任何问题，或者只是想和我打个招呼，欢迎联系我！
+::github{repo="hunvreus/pagescms"}
 
-- 🖥️ **Github**：[HXJLA](https://github.com/HXJLA)
-- 🖥️ **Github**：[MSQY-H](https://github.com/MSQY-H)
-- 📩 **Email**：[点击发送](mailto:LJXH-H@outlook.com)
+此外，这里是我的主博客，我的生活博客是[这个](https://life.ljxh-h.cc.cd)，欢迎大家来玩！
 
----
+### 为什么选择这样
 
-*感谢你的来访！希望在这里能找到对你有用的内容！*
+选择Cloudflare Pages来部署这个静态博客的一个原因是**预算有限**~~（其实是根本没预算）~~，另一个原因是**Cloudflare确实方便**，一键设置dns记录，免费版还很慷慨。
 
+至于选择Astro和Momo主题，是因为Astro新，并且**速度极快**（虽然不如hugo）；Momo主题虽然**轻量**，但是**效果很好**。
+
+## 关于爱好
+
+其实也没有什么特别喜欢的东西。
+
+ 1. **火车**：
+    -公司：`广铁` ~~抢铁U彩~~、`羊角`
+    -车型：`CR400AF-A`、`CRH380B`
+2. **游戏**：
+    -电脑：`Minecraft`、`Forza Horizon 4`、`Cities Skylines`
+    -Switch：`塞尔达传说：旷野之息`、`塞尔达传说：王国之泪`
+3. **运动**：`踩单车`
+4. **听歌**：`周杰伦`
+
+## 关于技能
+
+- **编程**：`Python`、`C++`、`HTML`、`CSS`、`JavaScript`、`Java` 
+- **软件**：`能熟练使用Windows、安卓`、`玩过Linux`、`能熟练安装卸载各大软件`、`会解压`、`熟练使用Office`
+- **WEB**：`会建站`、`会使用搜索引擎`
+- **硬件**：`能装机`、`能修复简单问题`
+- **运动**：`考试各大项目`
+
+:spoiler[说实在吧，啥都学过，最后还是Ctrl + C、Ctrl + V]
+
+## 关于未来
+
+如果有时间，我就会继续更新博客。当然，只是随缘更新。
+
+没有什么特别宏大的目标，就是考个好一点的学校，平常骑自行车去更远的地方，拍到更好的高铁（如果想看我拍的照的话，[点击这里](https://www.ljxh-h.cc.cd/gallery/train/)），把生活过好就行。
+
+## 联系
+
+- 邮箱📬：
+    - [LJXH_H@outlook.com](mailto:LJXH_H@outlook.com)
+    - [Hydroxid_Hualin@outlook.com](mailto:Hydroxid_Hualin@outlook.com)
+- Github🖥️：
+    - [HXJLA](https://github.com/HXJLA)
+    - [MSQY-H](https://github.com/MSQY-H)
