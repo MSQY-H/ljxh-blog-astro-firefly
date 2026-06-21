@@ -40,17 +40,19 @@ comment: true
 
 ### 1. 框架
 
-博客主要分为2种，一种是**静态博客**，一种是**动态博客**。动态博客**通常需要购买服务器**:[也有免费的，但是容易跑路]，本着~~薅羊毛~~便宜的原则，我们选择静态博客。
+博客主要分为2种，一种是**静态博客**，一种是**动态博客**。动态博客**通常需要购买服务器**:spoiler[也有免费的，但是容易跑路]，本着~~薅羊毛~~便宜的原则，我们选择静态博客。
 
 现在的静态博客框架主要有以下几种：
 
+
 | 名称 | 主要语言 | 特点 |
-| --- | --- | --- |
+| ------------- | ---------------- | ------------- |
 | **Hugo** | Go | 编译极快 |
 | **Astro** | TypeScript | 默认少量JS、岛屿架构 |
 | **Next.js** | TypeScript/React | 自动代码分割、自动生成路由 |
 | **Hexo** | Node.js | 主题多、上手快 |
 | **VitePress** | Vite | 速度快、专为文档打造 |
+
 
 这里我选**Astro**。理由如下：
 
@@ -60,7 +62,7 @@ comment: true
 
 ::github{repo="gohugoio/hugo"}
 
-![Hugo](./hugo.webp)
+![Hugo](hugo.webp)
 
 #### VitePress
 
@@ -68,7 +70,7 @@ comment: true
 
 ::github{repo="vuejs/vitepress"}
 
-![VitePress](./vitepress.webp)
+![VitePress](vitepress.webp)
 
 #### Hexo
 
@@ -76,7 +78,7 @@ comment: true
 
 ::github{repo="hexojs/hexo"}
 
-![Hexo](./hexo.webp)
+![Hexo](hexo.webp)
 
 #### Astro
 
@@ -84,7 +86,7 @@ comment: true
 
 ::github{repo="withastro/astro"}
 
-![Astro](./astro.webp)
+![Astro](astro.webp)
 
 #### Next.js
 
@@ -92,7 +94,7 @@ comment: true
 
 ::github{repo="vercel/next.js"}
 
-![Next.js](./nextjs.webp)
+![Next.js](nextjs.webp)
 
 > [!info] 提示
 > 如果你喜欢别的框架，**也完全没有问题**。萝卜青菜，各有所爱嘛。
@@ -104,31 +106,24 @@ comment: true
 #### Cloudflare Pages
 
 - Cloudflare是一个很有名的公司，可以说是互联网的基石之一了。
-
 - :spoiler[还记得上次Cloudflare出问题，全球大概一半的互联网都瘫痪了，详情可见[这里（IT之家）](https://m.ithome.com/html/898454.htm)]
-
 - Cloudflare的免费套餐**很慷慨**，对于Cloudflare Pages，可以有**无限带宽**、**每月500次部署**，对于个人来说，完全够用了。并且如果把域名托管到Cloudflare，还可以**一键添加DNS记录**，特别方便。
-
 - Cloudflare也不是没有缺点，毕竟是外国企业，访问速度**有点慢，但能用**。
-
 - [官网传送门](https://www.cloudflare-cn.com/personal/)
 
 #### Vercel
 
 - **每月有100GB带宽**、**无限次部署**，但是现在中国大陆访问**很难**，这里就不选了。
-
 - [官网传送门（你一般打不开）](https://vercel.com/)
 
 #### Netlify
 
 - **每月构建有300积分**，**带宽也是根据积分来算**。个人感觉有点**不够用**。
-
 - [官网传送门](https://www.netlify.com/)
 
 #### Edgeone Pages
 
 - 最大的优点是**国内访问速度快**，就是添加域名**有点麻烦**。而且不知道为什么，有些项目部署到Edgeone Pages会报错，而其他平台不会。
-
 - [官网传送门](https://edgeone.ai/zh)
 
 #### Github Pages
@@ -148,7 +143,8 @@ comment: true
 电脑建议使用**VSCode**。毕竟
 
 > **VSCode是前端最好用的编辑器**
-> <p align="right">——不知名专家</p>
+>
+> ——不知名专家
 
 VSCode有着**丰富的插件市场**，你不仅可以**用它编写博客的代码**，还可以安装一个Markdown插件，**用它来编写文章**，十分舒适。下次我写Markdown教程时，会详细介绍。
 
