@@ -4,7 +4,7 @@ export const analyticsConfig: AnalyticsConfig = {
 	// Google Analytics ID
 	googleAnalyticsId: "",
 	// Microsoft Clarity ID
-	microsoftClarityId: "",
+	microsoftClarityId: "xab8x7eh82",
 	// Umami 统计配置
 	umamiAnalytics: {
 		// Umami Website ID
