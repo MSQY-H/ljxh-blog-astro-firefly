@@ -27,11 +27,12 @@ export const friendsConfig: FriendLink[] = [
 		imgurl:
 			"https://i.ibb.co/6RBCvLHc/avatar.webp",
 		desc: "NVIDIA GeForce RTX 5060 Ti",
-		siteurl: "https://life.ljxh-h.cc.cd",
+		siteurl: "https://www.ljxh-h.cc.cd",
 		tags: ["Blog"],
 		weight: 12, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用
 	},
+	/*
 	{
 		title: "HXJL BLOG",
 		imgurl:
@@ -70,6 +71,7 @@ export const friendsConfig: FriendLink[] = [
 		weight: 8,
 		enabled: true,
 	},
+	*/
 ];
 
 // 获取启用的友链并进行排序
